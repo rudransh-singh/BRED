@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+</head>
+<body>
+
+<script>
+    // Array of 16 destination links
+    var links = [
+        'https://google.com/',
+        'https://reddit.com/',
+        'https://instagram.com/'
+    ];
+
+    // Function to generate a random index
+    function getRandomIndex(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    // Get a random index
+    var randomIndex = getRandomIndex(links.length);
+
+    // Redirect to the randomly selected link
+    window.location.href = links[randomIndex];
+</script>
+
+</body>
+</html>
